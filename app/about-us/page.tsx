@@ -48,9 +48,9 @@ export default function AboutUs() {
       <div className="py-12 bg-white w-[80%] mx-auto">
         <h2 className="text-4xl leading-[120%] text-heading">Our Values</h2>
         <div className="my-12 flex items-start gap-8">
-          {VALUES.map(({ title, description }) => {
+          {VALUES.map(({ title, description },index) => {
             return (
-              <div className="p-4 w-[350px] border border-heading rounded-[16px] bg-whtie">
+              <div key={index} className="p-4 w-[350px] border border-heading rounded-[16px] bg-whtie">
                 <h3 className="text-xl leading-lg text-heading">{title}</h3>
                 <p className="text-sm leading-md text-gray-500 mt-2">
                   {description}

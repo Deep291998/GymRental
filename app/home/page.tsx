@@ -83,9 +83,9 @@ export default function Home() {
           Featured Products
         </h2>
         <div className="my-12 flex items-center gap-8">
-          {PRODUCTS.map(({ name, description, price }) => {
+          {PRODUCTS.map(({ name, description, price },index) => {
             return (
-              <div className="p-4 w-[350px] border border-heading rounded-[16px] bg-whtie">
+              <div key={index} className="p-4 w-[350px] border border-heading rounded-[16px] bg-whtie">
                 <h3 className="text-xl leading-lg text-heading">{name}</h3>
                 <p className="text-sm leading-md text-gray-500 mt-2">
                   {description}
@@ -109,9 +109,9 @@ export default function Home() {
         <div className="w-[80%] p-12 mx-auto">
           <h2 className="text-4xl leading-[120%] text-white">How it works</h2>
           <div className="my-12 flex items-center gap-8">
-            {STEPPER.map(({ title, description, step }) => {
+            {STEPPER.map(({ title, description, step },index) => {
               return (
-                <div className="flex flex-col gap-4 w-[350px]">
+                <div key={index} className="flex flex-col gap-4 w-[350px]">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-accent">
                     <p className="text-xl leading-10 text-heading font-semibold">
                       {step}
