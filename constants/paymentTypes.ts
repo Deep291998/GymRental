@@ -1,0 +1,6 @@
+const PAYMENT_TYPES = {
+  BIWEEKLY: "BIWEEKLY",
+  MONTHLY: "MONTHLY",
+};
+
+export default PAYMENT_TYPES;
